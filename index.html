@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FlowKit AI | Launch-Ready Systems for Faster Builders</title>
   <meta name="description" content="FlowKit AI helps creators, freelancers, and builders turn messy ideas into clean workflows, launch plans, content systems, and simple digital products." />
+  <link rel="icon" type="image/png" href="assets/flowkit-logo.png" />
   <style>
     :root{
       --bg:#050712;
@@ -42,13 +43,8 @@
     .brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:-.04em}
     .logo-mark{
       width:40px;height:40px;border-radius:13px;
-      background:linear-gradient(135deg,var(--orange),var(--pink) 40%,var(--purple) 68%,var(--blue));
       box-shadow:0 0 28px rgba(124,69,255,.35);
-      position:relative;overflow:hidden;flex:0 0 auto;
-    }
-    .logo-mark:before{
-      content:"";position:absolute;left:10px;top:10px;width:23px;height:6px;border-radius:999px;
-      background:rgba(255,255,255,.92);box-shadow:0 10px 0 rgba(255,255,255,.72),0 20px 0 rgba(255,255,255,.48);
+      display:block;object-fit:cover;flex:0 0 auto;
     }
     .nav-links{display:flex;align-items:center;gap:24px;color:var(--muted);font-size:.92rem;font-weight:700}
     .nav-links a:hover{color:white}
@@ -151,6 +147,17 @@
     .price-note{color:var(--muted);font-weight:700;margin-bottom:10px}
     .included{display:grid;gap:12px;margin:26px 0 28px;padding:0;list-style:none}
     .included li{color:#e8ecff;font-weight:700}
+    .purchase-note,.contact-note,.mvp-note{color:#9fa8bf;font-size:.92rem;line-height:1.55}
+    .purchase-note{margin:14px 0 0;max-width:520px}
+    .contact-note{margin:12px 0 0}
+    .contact-note a{color:#f1f4ff;font-weight:800}
+    .mvp-note{
+      margin:20px 0 0;
+      padding:14px 16px;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:18px;
+      background:rgba(255,255,255,.055);
+    }
     .custom-box{display:flex;flex-direction:column;justify-content:space-between;gap:26px}
     .final{padding:110px 0;text-align:center}
     .final-card{
@@ -188,7 +195,7 @@
 <body>
   <nav class="nav">
     <div class="container nav-inner">
-      <a href="#top" class="brand"><span class="logo-mark"></span><span>FlowKit AI</span></a>
+      <a href="#top" class="brand"><img class="logo-mark" src="assets/flowkit-logo.png" alt="" width="40" height="40"><span>FlowKit AI</span></a>
       <div class="nav-links">
         <a href="#what">What It Is</a>
         <a href="#how">How It Works</a>
@@ -250,7 +257,7 @@
       <div class="container for-grid">
         <div class="brand-panel">
           <div>
-            <div class="logo-mark" style="margin:0 auto 22px;width:72px;height:72px;border-radius:24px;"></div>
+            <img class="logo-mark" src="assets/flowkit-logo.png" alt="" width="72" height="72" style="margin:0 auto 22px;width:72px;height:72px;border-radius:24px;">
             <h3>FlowKit</h3>
           </div>
         </div>
@@ -306,12 +313,18 @@
               <li><i class="check">✓</i>Simple action plan</li>
             </ul>
             <a class="btn btn-primary" href="https://venmo.com/u/flowkit" target="_blank" rel="noopener noreferrer">Buy with Venmo</a>
+            <p class="purchase-note">After purchase, email flowkitai.studio@gmail.com with your Venmo name and I’ll send your FlowKit Starter Kit.</p>
           </article>
           <aside class="custom-box">
-            <div><h3>Need something custom?</h3><p>Want a custom workflow, landing page structure, launch system, or content setup built around your actual idea?</p></div>
+            <div>
+              <h3>Need something custom?</h3>
+              <p>Want a custom workflow, landing page structure, launch system, or content setup built around your actual idea?</p>
+              <p class="contact-note">Custom requests: <a href="mailto:flowkitai.studio@gmail.com?subject=FlowKit%20Custom%20Workflow%20Inquiry">flowkitai.studio@gmail.com</a></p>
+            </div>
             <a class="btn btn-secondary" href="mailto:flowkitai.studio@gmail.com?subject=FlowKit%20Custom%20Workflow%20Inquiry">Inquire for Custom FlowKit</a>
           </aside>
         </div>
+        <p class="mvp-note">FlowKit is currently launching as a simple digital starter kit while custom workflow builds open by request.</p>
       </div>
     </section>
 
