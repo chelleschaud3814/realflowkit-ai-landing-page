@@ -108,6 +108,12 @@
     .section-kicker{color:#ffb3da;font-weight:900;font-size:.88rem;text-transform:uppercase;letter-spacing:.13em;margin-bottom:12px}
     h2{margin:0 0 14px;font-size:clamp(2.1rem,4vw,3.8rem);line-height:1;letter-spacing:-.06em}
     .cards-3,.steps,.pricing-wrap{display:grid;gap:18px}
+    .kit-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+    .kit-card{
+      background:rgba(255,255,255,.065);border:1px solid var(--line);border-radius:22px;
+      padding:18px;min-height:118px;display:flex;flex-direction:column;gap:10px
+    }
+    .kit-card strong{font-size:1rem;line-height:1.45;letter-spacing:-.02em}
     .cards-3{grid-template-columns:repeat(3,1fr)}
     .card,.step,.pricing,.custom-box{
       background:var(--card);border:1px solid var(--line);border-radius:28px;padding:26px;
@@ -200,7 +206,7 @@
         <a href="#what">What It Is</a>
         <a href="#how">How It Works</a>
         <a href="#pricing">Pricing</a>
-        <a class="btn btn-primary" href="https://venmo.com/u/flowkit" target="_blank" rel="noopener noreferrer">Buy with Venmo</a>
+        <a class="btn btn-secondary" href="https://www.instagram.com/flowkit.ai?utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
     </div>
   </nav>
@@ -292,6 +298,23 @@
       </div>
     </section>
 
+    <section id="inside">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Inside the Starter Kit</div>
+          <h2>A practical little launch system you can actually use today.</h2>
+          <p>Five practical pieces you can use right away.</p>
+        </div>
+        <div class="kit-grid">
+          <article class="kit-card"><div class="icon-pill">01</div><strong>20+ copy/paste AI workflow prompts</strong></article>
+          <article class="kit-card"><div class="icon-pill">02</div><strong>Launch clarity templates</strong></article>
+          <article class="kit-card"><div class="icon-pill">03</div><strong>Content system starters</strong></article>
+          <article class="kit-card"><div class="icon-pill">04</div><strong>Digital product idea prompts</strong></article>
+          <article class="kit-card"><div class="icon-pill">05</div><strong>A simple action plan for your next offer</strong></article>
+        </div>
+      </div>
+    </section>
+
     <section id="pricing">
       <div class="container">
         <div class="section-head">
@@ -313,7 +336,7 @@
               <li><i class="check">✓</i>Simple action plan</li>
             </ul>
             <a class="btn btn-primary" href="https://venmo.com/u/flowkit" target="_blank" rel="noopener noreferrer">Buy with Venmo</a>
-            <p class="purchase-note">After purchase, email flowkitai.studio@gmail.com with your Venmo name and I’ll send your FlowKit Starter Kit.</p>
+            <p class="purchase-note">After checkout, email flowkitai.studio@gmail.com with your Venmo name so I can send your Starter Kit.</p>
           </article>
           <aside class="custom-box">
             <div>
@@ -324,7 +347,7 @@
             <a class="btn btn-secondary" href="mailto:flowkitai.studio@gmail.com?subject=FlowKit%20Custom%20Workflow%20Inquiry">Inquire for Custom FlowKit</a>
           </aside>
         </div>
-        <p class="mvp-note">FlowKit is currently launching as a simple digital starter kit while custom workflow builds open by request.</p>
+        <p class="mvp-note">FlowKit is currently in its first launch phase — simple, hands-on, and built for creators who want clarity fast.</p>
       </div>
     </section>
 
@@ -333,7 +356,7 @@
         <div class="final-card">
           <h2>Less chaos. <span class="gradient-text">More launch.</span></h2>
           <p>FlowKit AI gives your ideas a place to land, a system to follow, and a cleaner way to build the thing already sitting in your brain.</p>
-          <a class="btn btn-primary" href="https://venmo.com/u/flowkit" target="_blank" rel="noopener noreferrer">Request FlowKit</a>
+          <a class="btn btn-primary" href="https://venmo.com/u/flowkit" target="_blank" rel="noopener noreferrer">Get FlowKit for $27</a>
         </div>
       </div>
     </section>
