@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FlowKit AI | Launch-Ready Systems for Faster Builders</title>
-  <meta name="description" content="FlowKit AI helps creators, freelancers, and builders turn messy ideas into clean workflows, launch plans, content systems, and simple digital products." />
+  <title>FlowKit AI | Clean Launch Systems for Creators</title>
+  <meta name="description" content="FlowKit helps creators, freelancers, and AI-curious builders organize scattered ideas into workflows, content systems, launch plans, and simple digital products." />
   <link rel="icon" type="image/png" href="assets/flowkit-logo.png" />
   <style>
     :root{
@@ -70,10 +70,10 @@
       background:rgba(255,255,255,.06);color:#dbe1f5;font-size:.86rem;font-weight:750;margin-bottom:22px;
     }
     .spark{width:9px;height:9px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--pink),var(--blue));box-shadow:0 0 18px rgba(255,59,144,.8)}
-    h1{font-size:clamp(3rem,7vw,6.45rem);line-height:.91;letter-spacing:-.075em;margin:0 0 24px;max-width:850px}
+    h1{font-size:clamp(3rem,7vw,6.45rem);line-height:.91;letter-spacing:-.075em;margin:0 0 24px;max-width:860px}
     .gradient-text{background:linear-gradient(135deg,#fff 10%,#ffcc83 30%,#ff4ca0 52%,#986bff 73%,#5b8dff 95%);-webkit-background-clip:text;color:transparent}
     .hero p,.section-head p{color:var(--muted);line-height:1.7}
-    .hero p{font-size:clamp(1.05rem,2vw,1.28rem);max-width:660px;margin:0 0 30px}
+    .hero p{font-size:clamp(1.05rem,2vw,1.28rem);max-width:670px;margin:0 0 30px}
     .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:28px}
     .micro-proof{display:flex;gap:16px;flex-wrap:wrap;color:#7f88a3;font-size:.93rem;font-weight:700}
     .check{
@@ -99,33 +99,31 @@
     .mock-cards{position:relative;display:grid;gap:14px}
     .mock-card{min-height:94px;padding:18px;border-radius:22px;background:rgba(5,7,18,.72);border:1px solid rgba(255,255,255,.11);display:grid;gap:9px}
     .mock-card.featured{min-height:128px;background:linear-gradient(135deg,rgba(255,147,15,.15),rgba(255,59,144,.12),rgba(47,111,255,.12)),rgba(5,7,18,.76)}
-    .mock-title{display:flex;justify-content:space-between;align-items:center;font-size:.92rem;font-weight:800}
+    .mock-title{display:flex;justify-content:space-between;align-items:center;font-size:.92rem;font-weight:800;gap:12px}
     .tag{padding:5px 9px;border-radius:999px;background:rgba(255,255,255,.10);font-size:.72rem;font-weight:900;color:#dbe2ff}
     .bar{height:8px;border-radius:999px;background:rgba(255,255,255,.10);overflow:hidden}
     .bar span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--orange),var(--pink),var(--purple),var(--blue))}
     section{padding:82px 0}
-    .section-head{max-width:720px;margin-bottom:34px}
+    .section-head{max-width:760px;margin-bottom:34px}
     .section-kicker{color:#ffb3da;font-weight:900;font-size:.88rem;text-transform:uppercase;letter-spacing:.13em;margin-bottom:12px}
     h2{margin:0 0 14px;font-size:clamp(2.1rem,4vw,3.8rem);line-height:1;letter-spacing:-.06em}
-    .cards-3,.steps,.pricing-wrap{display:grid;gap:18px}
-    .kit-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
-    .kit-card{
-      background:rgba(255,255,255,.065);border:1px solid var(--line);border-radius:22px;
-      padding:18px;min-height:118px;display:flex;flex-direction:column;gap:10px
-    }
-    .kit-card strong{font-size:1rem;line-height:1.45;letter-spacing:-.02em}
-    .cards-3{grid-template-columns:repeat(3,1fr)}
-    .card,.step,.pricing,.custom-box{
+    .cards-3,.steps,.pricing-wrap,.inside-grid,.problem-grid{display:grid;gap:18px}
+    .cards-3,.steps,.problem-grid{grid-template-columns:repeat(3,1fr)}
+    .inside-grid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+    .card,.step,.pricing,.custom-box,.inside-card,.problem-card,.checkout-note{
       background:var(--card);border:1px solid var(--line);border-radius:28px;padding:26px;
       box-shadow:0 18px 55px rgba(0,0,0,.22);
     }
+    .inside-card{min-height:184px;display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+    .inside-card strong{font-size:1.08rem;line-height:1.35;letter-spacing:-.03em}
+    .inside-card p,.problem-card p{margin:0;color:var(--muted);line-height:1.55;font-size:.95rem}
     .icon-pill{
       width:46px;height:46px;border-radius:16px;display:inline-flex;align-items:center;justify-content:center;margin-bottom:22px;
       background:linear-gradient(135deg,rgba(255,147,15,.22),rgba(255,59,144,.18),rgba(124,69,255,.18),rgba(47,111,255,.20));
       border:1px solid rgba(255,255,255,.12);font-weight:900;
     }
     h3{font-size:1.2rem;margin:0 0 10px;letter-spacing:-.035em}
-    .card p,.step p,.custom-box p{margin:0;color:var(--muted);line-height:1.62}
+    .card p,.step p,.custom-box p,.pricing p{margin:0;color:var(--muted);line-height:1.62}
     .brand-panel{
       border:1px solid var(--line);border-radius:34px;padding:34px;
       background:
@@ -140,30 +138,28 @@
     .bullet-list{display:grid;gap:14px}
     .bullet{display:flex;gap:14px;background:rgba(255,255,255,.065);border:1px solid var(--line);border-radius:22px;padding:18px}
     .bullet strong{display:block;margin-bottom:5px}.bullet p{margin:0;color:var(--muted);line-height:1.55;font-size:.95rem}
-    .steps{grid-template-columns:repeat(3,1fr);counter-reset:step}
+    .steps{counter-reset:step}
     .step{counter-increment:step;min-height:240px}
     .step:before{
       content:"0" counter(step);display:inline-flex;width:48px;height:48px;align-items:center;justify-content:center;border-radius:16px;margin-bottom:30px;
       background:linear-gradient(135deg,var(--orange),var(--pink),var(--purple),var(--blue));font-weight:900;color:white;
     }
-    .pricing-wrap{grid-template-columns:1fr .78fr;align-items:stretch}
-    .pricing{background:linear-gradient(180deg,rgba(255,255,255,.11),rgba(255,255,255,.05));border-color:rgba(255,255,255,.18);box-shadow:0 28px 90px rgba(0,0,0,.55)}
+    .pricing-wrap{grid-template-columns:1.05fr .75fr;align-items:stretch}
+    .pricing{background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.055));border-color:rgba(255,255,255,.20);box-shadow:0 28px 90px rgba(0,0,0,.55)}
     .price-row{display:flex;align-items:end;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:20px}
-    .price{font-size:clamp(3rem,8vw,5.5rem);line-height:.9;font-weight:950;letter-spacing:-.075em}
-    .price-note{color:var(--muted);font-weight:700;margin-bottom:10px}
+    .price{font-size:clamp(3.3rem,8vw,5.8rem);line-height:.9;font-weight:950;letter-spacing:-.075em}
+    .price-note{color:var(--muted);font-weight:700;margin:8px 0 20px;max-width:650px;line-height:1.62}
     .included{display:grid;gap:12px;margin:26px 0 28px;padding:0;list-style:none}
     .included li{color:#e8ecff;font-weight:700}
     .purchase-note,.contact-note,.mvp-note{color:#9fa8bf;font-size:.92rem;line-height:1.55}
     .purchase-note{margin:14px 0 0;max-width:520px}
-    .contact-note{margin:12px 0 0}
-    .contact-note a{color:#f1f4ff;font-weight:800}
-    .mvp-note{
-      margin:20px 0 0;
-      padding:14px 16px;
-      border:1px solid rgba(255,255,255,.12);
-      border-radius:18px;
-      background:rgba(255,255,255,.055);
+    .contact-note{margin:16px 0 0}
+    .contact-note a{color:#f1f4ff;font-weight:800;text-decoration:underline;text-decoration-color:rgba(255,255,255,.28);text-underline-offset:4px}
+    .checkout-note{
+      display:flex;flex-direction:column;justify-content:space-between;gap:22px;
+      background:linear-gradient(180deg,rgba(255,255,255,.085),rgba(255,255,255,.045));
     }
+    .checkout-note ul{display:grid;gap:12px;margin:0;padding:0;list-style:none;color:#e8ecff;font-weight:700}
     .custom-box{display:flex;flex-direction:column;justify-content:space-between;gap:26px}
     .final{padding:110px 0;text-align:center}
     .final-card{
@@ -181,7 +177,7 @@
     .footer-inner{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
     .footer-links{display:flex;gap:18px;flex-wrap:wrap;font-weight:700}
     @media(max-width:920px){
-      .hero-grid,.for-grid,.pricing-wrap,.cards-3,.steps{grid-template-columns:1fr}
+      .hero-grid,.for-grid,.pricing-wrap,.cards-3,.steps,.problem-grid{grid-template-columns:1fr}
       .nav-links a:not(.btn){display:none}
       .hero{padding-top:62px}.dashboard{border-radius:26px}
     }
@@ -189,11 +185,11 @@
       .container{width:min(100% - 28px,var(--max))}
       .nav-inner{height:66px}
       .brand span{font-size:1rem}
-      .nav-links .btn{min-height:42px;padding:0 14px;font-size:.9rem}
-      h1{font-size:3.2rem}
+      .nav-links .btn{min-height:42px;padding:0 14px;font-size:.82rem}
+      h1{font-size:3.05rem}
       section{padding:60px 0}
-      .hero-actions .btn{width:100%}
-      .card,.pricing,.custom-box,.step{padding:22px;border-radius:24px}
+      .hero-actions .btn,.pricing .btn,.custom-box .btn,.final-card .btn{width:100%}
+      .card,.pricing,.custom-box,.step,.inside-card,.problem-card,.checkout-note{padding:22px;border-radius:24px}
       .final-card{border-radius:28px;padding:52px 18px}
     }
   </style>
@@ -203,10 +199,11 @@
     <div class="container nav-inner">
       <a href="#top" class="brand"><img class="logo-mark" src="assets/flowkit-logo.png" alt="" width="40" height="40"><span>FlowKit AI</span></a>
       <div class="nav-links">
-        <a href="#what">What It Is</a>
+        <a href="#problem">Problem</a>
+        <a href="#inside">What's Inside</a>
         <a href="#how">How It Works</a>
         <a href="#pricing">Pricing</a>
-        <a class="btn btn-secondary" href="https://www.instagram.com/flowkit.ai?utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="btn btn-secondary" href="[ADD STRIPE PAYMENT LINK HERE]" target="_blank" rel="noopener noreferrer">Buy the Starter Kit</a>
       </div>
     </div>
   </nav>
@@ -215,17 +212,17 @@
     <header class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow"><span class="spark"></span> AI workflows for faster builders</div>
-          <h1>Turn messy ideas into <span class="gradient-text">launch-ready systems.</span></h1>
-          <p>FlowKit AI helps creators, freelancers, and builders organize chaotic notes into clean workflows, launch plans, content systems, and simple digital products.</p>
+          <div class="eyebrow"><span class="spark"></span> AI workflow systems for faster builders</div>
+          <h1>Turn messy ideas into <span class="gradient-text">clean launch systems.</span></h1>
+          <p>FlowKit helps creators, freelancers, and AI-curious builders organize scattered ideas into workflows, content systems, launch plans, and simple digital products.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://venmo.com/u/flowkit" target="_blank" rel="noopener noreferrer">Buy with Venmo</a>
-            <a class="btn btn-secondary" href="#how">See how it works</a>
+            <a class="btn btn-primary" href="[ADD STRIPE PAYMENT LINK HERE]" target="_blank" rel="noopener noreferrer">Get FlowKit Starter Kit</a>
+            <a class="btn btn-secondary" href="#how">See How It Works</a>
           </div>
           <div class="micro-proof">
-            <span><i class="check">✓</i>Simple MVP setup</span>
-            <span><i class="check">✓</i>Creator-friendly systems</span>
-            <span><i class="check">✓</i>No chaos goblin energy</span>
+            <span><i class="check">✓</i>Productized digital kit</span>
+            <span><i class="check">✓</i>20+ workflow prompts</span>
+            <span><i class="check">✓</i>Built for clear next steps</span>
           </div>
         </div>
 
@@ -235,31 +232,31 @@
             <div class="dash-label">FlowKit workspace</div>
           </div>
           <div class="mock-cards">
-            <div class="mock-card featured"><div class="mock-title">Idea → Workflow <span class="tag">Mapped</span></div><div class="bar"><span style="width:91%"></span></div><div class="bar"><span style="width:62%"></span></div></div>
-            <div class="mock-card"><div class="mock-title">Notes → Launch Plan <span class="tag">Clear</span></div><div class="bar"><span style="width:74%"></span></div></div>
-            <div class="mock-card"><div class="mock-title">Content → System <span class="tag">Ready</span></div><div class="bar"><span style="width:84%"></span></div></div>
-            <div class="mock-card"><div class="mock-title">Product → Offer <span class="tag">Sellable</span></div><div class="bar"><span style="width:68%"></span></div></div>
+            <div class="mock-card featured"><div class="mock-title">Idea Input <span class="tag">Organized</span></div><div class="bar"><span style="width:91%"></span></div><div class="bar"><span style="width:64%"></span></div></div>
+            <div class="mock-card"><div class="mock-title">Prompt Library <span class="tag">Ready</span></div><div class="bar"><span style="width:78%"></span></div></div>
+            <div class="mock-card"><div class="mock-title">Launch Plan <span class="tag">Mapped</span></div><div class="bar"><span style="width:84%"></span></div></div>
+            <div class="mock-card"><div class="mock-title">Offer System <span class="tag">Clear</span></div><div class="bar"><span style="width:70%"></span></div></div>
           </div>
         </div>
       </div>
     </header>
 
-    <section id="what">
+    <section id="problem">
       <div class="container">
         <div class="section-head">
-          <div class="section-kicker">What FlowKit Is</div>
-          <h2>Your AI-powered clarity kit for building faster.</h2>
-          <p>For people with big ideas, scattered notes, half-built projects, and absolutely no patience for another “I’ll organize this later” folder.</p>
+          <div class="section-kicker">The Problem</div>
+          <h2>Your ideas are not the problem. The chaos around them is.</h2>
+          <p>FlowKit is for the moment when your notes, offers, content ideas, and product concepts all feel promising, but not yet usable.</p>
         </div>
-        <div class="cards-3">
-          <article class="card"><div class="icon-pill">01</div><h3>Workflow Kits</h3><p>Turn ideas into organized steps, systems, and repeatable processes you can actually follow.</p></article>
-          <article class="card"><div class="icon-pill">02</div><h3>Launch Plans</h3><p>Map out what to build, post, sell, and improve next without spiraling into tab chaos.</p></article>
-          <article class="card"><div class="icon-pill">03</div><h3>Content Systems</h3><p>Create cleaner calendars, offers, captions, and brand ideas without starting from scratch.</p></article>
+        <div class="problem-grid">
+          <article class="problem-card"><div class="icon-pill">01</div><h3>Too many loose pieces</h3><p>Ideas get scattered across notes, drafts, screenshots, and tabs before they become anything real.</p></article>
+          <article class="problem-card"><div class="icon-pill">02</div><h3>No clean next step</h3><p>You know there is something useful in the mess, but the path from idea to offer is unclear.</p></article>
+          <article class="problem-card"><div class="icon-pill">03</div><h3>AI without structure</h3><p>Generic prompts create more output, but not always a cleaner plan you can actually use.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="who">
+    <section id="what">
       <div class="container for-grid">
         <div class="brand-panel">
           <div>
@@ -269,16 +266,32 @@
         </div>
         <div>
           <div class="section-head">
-            <div class="section-kicker">Who It’s For</div>
-            <h2>Built for idea people tired of winging it.</h2>
-            <p>FlowKit keeps the build simple, clean, and realistic — so your ideas stop living rent-free in your notes app.</p>
+            <div class="section-kicker">What FlowKit Is</div>
+            <h2>FlowKit is a digital clarity kit for builders.</h2>
+            <p>It gives you practical prompts, templates, and action structures for turning early-stage ideas into clearer workflows, offers, launch plans, and content systems.</p>
           </div>
           <div class="bullet-list">
-            <div class="bullet"><i class="check">✓</i><div><strong>Creators building digital products</strong><p>Get your product idea shaped into something clear enough to sell.</p></div></div>
-            <div class="bullet"><i class="check">✓</i><div><strong>Freelancers organizing client offers</strong><p>Package your skills into cleaner services, workflows, and deliverables.</p></div></div>
-            <div class="bullet"><i class="check">✓</i><div><strong>Founders launching simple tools</strong><p>Structure your idea before you overbuild the wrong thing beautifully.</p></div></div>
-            <div class="bullet"><i class="check">✓</i><div><strong>AI-curious builders</strong><p>Use AI for clarity, not chaos dressed up as productivity.</p></div></div>
+            <div class="bullet"><i class="check">✓</i><div><strong>For creators building digital products</strong><p>Shape raw ideas into offers, assets, and practical next steps.</p></div></div>
+            <div class="bullet"><i class="check">✓</i><div><strong>For freelancers organizing services</strong><p>Package your process into cleaner workflows and client-ready systems.</p></div></div>
+            <div class="bullet"><i class="check">✓</i><div><strong>For AI-curious builders</strong><p>Use AI with structure, not just more scattered output.</p></div></div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="inside">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">What's Inside</div>
+          <h2>A focused toolkit for turning ideas into usable systems.</h2>
+          <p>Each piece is designed to help you move from messy input to a cleaner plan, product, offer, or content direction.</p>
+        </div>
+        <div class="inside-grid">
+          <article class="inside-card"><div><div class="icon-pill">01</div><strong>AI Workflow Prompt Library</strong></div><p>Prompt frameworks for organizing ideas, workflows, offers, launches, and product directions.</p></article>
+          <article class="inside-card"><div><div class="icon-pill">02</div><strong>Launch Planning Templates</strong></div><p>Simple structures for mapping what to build, publish, package, and improve next.</p></article>
+          <article class="inside-card"><div><div class="icon-pill">03</div><strong>Content System Starters</strong></div><p>Starting points for content themes, repeatable post ideas, and clearer creative planning.</p></article>
+          <article class="inside-card"><div><div class="icon-pill">04</div><strong>Digital Product Clarity Prompts</strong></div><p>Prompts that help define your audience, offer, promise, format, and next product step.</p></article>
+          <article class="inside-card"><div><div class="icon-pill">05</div><strong>Simple Action Plan</strong></div><p>A practical way to turn the output into a focused next move for your offer.</p></article>
         </div>
       </div>
     </section>
@@ -287,30 +300,13 @@
       <div class="container">
         <div class="section-head">
           <div class="section-kicker">How It Works</div>
-          <h2>From chaos to clean in three steps.</h2>
-          <p>FlowKit is designed to be simple enough to use today, not “after you watch 12 tutorials and question your life choices.”</p>
+          <h2>From scattered input to clean direction in three steps.</h2>
+          <p>FlowKit keeps the process simple, productized, and easy to repeat whenever you need clarity.</p>
         </div>
         <div class="steps">
-          <article class="step"><h3>Drop in the mess</h3><p>Bring your notes, ideas, offers, content plans, or half-built concepts. The uglier the starting point, the more useful FlowKit becomes.</p></article>
-          <article class="step"><h3>FlowKit organizes it</h3><p>Turn scattered thoughts into workflows, frameworks, launch plans, and content systems that feel clean and doable.</p></article>
-          <article class="step"><h3>Build with clarity</h3><p>Know what to make, what to post, what to sell, and what to do next — without rebuilding your brain every Monday.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="inside">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-kicker">Inside the Starter Kit</div>
-          <h2>A practical little launch system you can actually use today.</h2>
-          <p>Five practical pieces you can use right away.</p>
-        </div>
-        <div class="kit-grid">
-          <article class="kit-card"><div class="icon-pill">01</div><strong>20+ copy/paste AI workflow prompts</strong></article>
-          <article class="kit-card"><div class="icon-pill">02</div><strong>Launch clarity templates</strong></article>
-          <article class="kit-card"><div class="icon-pill">03</div><strong>Content system starters</strong></article>
-          <article class="kit-card"><div class="icon-pill">04</div><strong>Digital product idea prompts</strong></article>
-          <article class="kit-card"><div class="icon-pill">05</div><strong>A simple action plan for your next offer</strong></article>
+          <article class="step"><h3>Drop in the mess</h3><p>Start with notes, ideas, content fragments, offer concepts, or a rough direction you have not fully shaped yet.</p></article>
+          <article class="step"><h3>Use the prompts and templates</h3><p>Work through the FlowKit prompts to organize the raw material into structure, angles, and priorities.</p></article>
+          <article class="step"><h3>Turn the output into a cleaner plan, product, offer, or content system</h3><p>Leave with a more usable direction and a clearer next step for building, launching, or publishing.</p></article>
         </div>
       </div>
     </section>
@@ -318,36 +314,53 @@
     <section id="pricing">
       <div class="container">
         <div class="section-head">
-          <div class="section-kicker">Simple Offer</div>
-          <h2>Start simple. Build sharper.</h2>
-          <p>A clean first kit for turning idea clutter into something organized, useful, and ready to move.</p>
+          <div class="section-kicker">Starter Kit Offer</div>
+          <h2>Start with the system. Build with clarity.</h2>
+          <p>A polished digital kit for moving from idea clutter to a cleaner plan you can act on.</p>
         </div>
         <div class="pricing-wrap">
           <article class="pricing">
             <div class="price-row">
-              <div><h3>FlowKit Starter Kit</h3><div class="price-note">Digital clarity kit for creators and builders</div></div>
+              <div><h3>FlowKit Starter Kit</h3></div>
               <div class="price">$27</div>
             </div>
+            <p class="price-note">A digital clarity kit for creators, freelancers, and AI-curious builders who want to turn messy ideas into clean workflows, content systems, launch plans, and digital products.</p>
             <ul class="included">
-              <li><i class="check">✓</i>AI workflow prompts</li>
+              <li><i class="check">✓</i>20+ AI workflow prompts</li>
               <li><i class="check">✓</i>Launch planning templates</li>
               <li><i class="check">✓</i>Content system starters</li>
               <li><i class="check">✓</i>Digital product clarity prompts</li>
               <li><i class="check">✓</i>Simple action plan</li>
             </ul>
-            <a class="btn btn-primary" href="https://venmo.com/u/flowkit" target="_blank" rel="noopener noreferrer">Buy with Venmo</a>
-            <p class="purchase-note">After checkout, email flowkitai.studio@gmail.com with your Venmo name so I can send your Starter Kit.</p>
+            <a class="btn btn-primary" href="[ADD STRIPE PAYMENT LINK HERE]" target="_blank" rel="noopener noreferrer">Get Instant Access</a>
+            <p class="purchase-note">Secure checkout. Instant delivery after purchase.</p>
           </article>
-          <aside class="custom-box">
+          <aside class="checkout-note">
             <div>
-              <h3>Need something custom?</h3>
-              <p>Want a custom workflow, landing page structure, launch system, or content setup built around your actual idea?</p>
-              <p class="contact-note">Custom requests: <a href="mailto:flowkitai.studio@gmail.com?subject=FlowKit%20Custom%20Workflow%20Inquiry">flowkitai.studio@gmail.com</a></p>
+              <h3>Clean, productized, ready to use</h3>
+              <p>FlowKit is built as a focused starter system, not an open-ended consulting ask. Start with the kit, use the prompts, and build from a clearer place.</p>
             </div>
-            <a class="btn btn-secondary" href="mailto:flowkitai.studio@gmail.com?subject=FlowKit%20Custom%20Workflow%20Inquiry">Inquire for Custom FlowKit</a>
+            <ul>
+              <li><i class="check">✓</i>Designed for one clear purchase</li>
+              <li><i class="check">✓</i>Instant-access checkout placeholder</li>
+              <li><i class="check">✓</i>Custom builds available by request</li>
+            </ul>
           </aside>
         </div>
-        <p class="mvp-note">FlowKit is currently in its first launch phase — simple, hands-on, and built for creators who want clarity fast.</p>
+      </div>
+    </section>
+
+    <section id="custom">
+      <div class="container">
+        <div class="custom-box">
+          <div>
+            <div class="section-kicker">Custom FlowKit</div>
+            <h2>Want a custom FlowKit built around your idea?</h2>
+            <p>If you need a custom workflow, landing page structure, launch system, content setup, or AI-powered product map, you can request a custom FlowKit build.</p>
+            <p class="contact-note">Custom requests: <a href="mailto:flowkitai.studio@gmail.com?subject=Custom%20FlowKit%20Request">flowkitai.studio@gmail.com</a></p>
+          </div>
+          <a class="btn btn-secondary" href="mailto:flowkitai.studio@gmail.com?subject=Custom%20FlowKit%20Request">Request Custom FlowKit</a>
+        </div>
       </div>
     </section>
 
@@ -355,8 +368,8 @@
       <div class="container">
         <div class="final-card">
           <h2>Less chaos. <span class="gradient-text">More launch.</span></h2>
-          <p>FlowKit AI gives your ideas a place to land, a system to follow, and a cleaner way to build the thing already sitting in your brain.</p>
-          <a class="btn btn-primary" href="https://venmo.com/u/flowkit" target="_blank" rel="noopener noreferrer">Get FlowKit for $27</a>
+          <p>FlowKit gives your ideas a practical structure, a sharper path, and a cleaner way to build what you are already carrying around in your notes.</p>
+          <a class="btn btn-primary" href="[ADD STRIPE PAYMENT LINK HERE]" target="_blank" rel="noopener noreferrer">Get Instant Access</a>
         </div>
       </div>
     </section>
@@ -364,10 +377,10 @@
 
   <footer>
     <div class="container footer-inner">
-      <div><strong>FlowKit AI</strong><br>AI workflows, launch systems, and clarity kits for faster builders.</div>
+      <div><strong>FlowKit AI</strong><br>Digital clarity kits, workflow prompts, and launch systems for faster builders.</div>
       <div class="footer-links">
         <a href="https://www.instagram.com/flowkit.ai?utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="mailto:flowkitai.studio@gmail.com?subject=FlowKit%20Inquiry">Contact</a>
+        <a href="#custom">Custom FlowKit</a>
         <a href="#top">Back to top</a>
       </div>
     </div>
